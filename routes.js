@@ -1,10 +1,8 @@
 'use strict';
 
 async function getHandler(id, response, model) {
-  
   // NEVER declare response with const
   let records = [];
-  
   try {
     // perform the CRUD using our specified schema
     records = id ?
