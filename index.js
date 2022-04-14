@@ -19,9 +19,14 @@ const peopleSchema = new dynamoose.Schema({
 const peopleModel = dynamoose.model('people', peopleSchema);
 
 exports.handler = async (event) => {
-  const { pathParameters, jsonBody, httpMethod  } = event;
+  const { pathParameters, httpMethod  } = event;
+  let { body } = event;
   const id = pathParameters.id || null;
-  const body = JSON.parse(jsonBody);
+  try {
+    body = JSON.parse(body);
+  } catch (e){
+    console.log('Body is not JSON');
+  }
 
   let response = { statusCode: null, body: null };
 
