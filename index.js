@@ -22,6 +22,7 @@ exports.handler = async (event) => {
   const { pathParameters, httpMethod  } = event;
   let { body } = event;
   const id = pathParameters.id || null;
+  console.log('\nLogging Id:\n ', id);
   try {
     body = JSON.parse(body);
   } catch (e){
