@@ -2,7 +2,7 @@
 
 A single resource REST API using a "people" model, constructed using AWS Cloud Services
 
-[**Deployed link to my API**](https://m93jyhzd5c.execute-api.us-west-2.amazonaws.com/Dev)
+[**Link to my API**](https://m93jyhzd5c.execute-api.us-west-2.amazonaws.com/Dev)
 
 ## UML Diagram
 
