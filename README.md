@@ -1,12 +1,12 @@
 # AWS API with Dynamo and Lambda
 
-A single resource REST API using a "people" model, constructed using AWS Cloud Services
+A single resource REST API using a "people" model, constructed using AWS Cloud Services. This uses a single "handlePeople" Lambda with a multi-CRUD route handler for processing requests for the Dynamo DB "people" table.
 
 [**Link to my API**](https://m93jyhzd5c.execute-api.us-west-2.amazonaws.com/Dev)
 
 ## UML Diagram
 
-![My UML diagram]
+![My UML diagram](./assets/lab-18-uml.jpg)
 
 ## Authors/Contributors
 
